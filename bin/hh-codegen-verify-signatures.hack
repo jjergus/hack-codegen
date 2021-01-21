@@ -107,6 +107,7 @@ function verify_signatures_main(): noreturn {
     $dir = \substr($dir, 0, $pos);
   }
   \Facebook\AutoloadMap\initialize();
+  throw new \Exception('YOU SHALL NOT PASS');
   (new CLIVerifier(vec(/* HH_FIXME[4110] */ \HH\global_get('argv'))))->main();
   exit(0);
 }

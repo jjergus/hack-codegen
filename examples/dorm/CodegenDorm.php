@@ -85,7 +85,7 @@ class CodegenDorm {
   }
 
   private function getLoad(): CodegenMethod {
-    $sql = 'select * from '.
+    $sql = 'SELECT * from '.
       $this->schema->getTableName().
       ' where '.$this->schema->getIdField().'=\'.$id.\'';
 

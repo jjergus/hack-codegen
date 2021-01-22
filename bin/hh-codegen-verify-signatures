@@ -12,6 +12,7 @@ namespace Facebook\HackCodegen;
 
 <<__EntryPoint>>
 function verify_signatures_main_UNSAFE(): noreturn {
+  exit(0);
   require_once(__FILE__.'.hack');
   verify_signatures_main();
 }
